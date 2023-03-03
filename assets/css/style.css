@@ -202,6 +202,7 @@ html {
 
 .project-content:nth-child(2) .describe {
   width: 50%;
+  padding: 0;
   position: relative;
 }
 
@@ -209,8 +210,10 @@ html {
   content: "";
   position: absolute;
   width: 100%;
-  height:500px;
-  background-color: red
+  height:62rem;
+  background-color: #000;
+  z-index: -1;
+  top: -7.5rem;
 }
 
 .project-content .describe h2 {
@@ -222,11 +225,19 @@ html {
   padding-bottom: 1.9rem;
 }
 
+.project-content:nth-child(2) .describe h2 {
+  color: #fff;
+}
+
 .project-content .describe p {
   color: #7c7c7d;
   text-align: center;
   font-size: 3rem;
   line-height: 1.6;
+}
+
+.project-content:nth-child(2) .describe p {
+  padding: 0 10rem;
 }
 
 @media screen and (max-width: 1599px) {
@@ -244,5 +255,11 @@ html {
 
   .header {
     height: 15rem;
+  }
+
+
+  .project-content:nth-child(2) .describe::before {
+    top: -14.3rem;
+    height: 68rem;
   }
 }
