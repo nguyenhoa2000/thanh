@@ -25,6 +25,7 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -164,6 +165,7 @@ html {
 
 .project {
   padding-top: 30rem;
+  padding-bottom: 30rem;
 }
 
 .project-content {
@@ -184,6 +186,14 @@ html {
 .project-content:nth-child(2) .illustration,
 .project-content:nth-child(3) .illustration {
   width: 50%;
+}
+
+.project-content:nth-child(2) .illustration {
+  background: url(../img/demo-image-01.jpg) no-repeat top center/ cover;
+}
+
+.project-content:nth-child(3) .illustration {
+  background: url(../img/demo-image-02.jpg) no-repeat top center/ cover;
 }
 
 .project-content:first-child .illustration::after {
@@ -265,7 +275,9 @@ html {
     height: 15rem;
   }
 
-  .project-content:nth-child(2) .describe::before , .project-content:nth-child(3) .describe::before {
+  /* content */
+  .project-content:nth-child(2) .describe::before,
+  .project-content:nth-child(3) .describe::before {
     top: -14.3rem;
     height: 68rem;
   }
@@ -274,5 +286,86 @@ html {
     padding-bottom: 8.9rem;
   }
 
+/* footer */
+}
+.footer {
+  background: url(../img/demo-image-02.jpg) no-repeat top center/ cover;
+  width: 100%;
+  padding-bottom: 72%;
+  position: relative;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.footer-content {
+  position: absolute;
+  top:30.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.footer-logo {
+  text-align: center;
+  padding-bottom: 9rem;
+}
+
+.footer-logo i {
+  font-size: 6rem;
+  color: #fff;
   
+}
+.footer-logo p {
+  color: #fff;
+  font-size: 6rem;
+  padding-top: 3.8rem;
+}
+
+.form-item {
+  display:flex;
+  gap: 0 3rem;
+}
+
+
+.btn-ft {
+  border:none;
+  outline: none;
+  background-color: #64a19d;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.5rem;
+  padding: 3rem 5rem;
+  border-radius: 4px;
+  transition: all 0.4 ease;
+}
+
+.btn-ft:hover {
+  background-color: #fff;
+  color: #64a19d;
+  cursor: pointer;
+
+}
+
+.form-control {
+  width: 70rem;
+  padding-left: 3rem;
+  border-radius: 4px;
+}
+
+.form-control::placeholder {
+  font-size: 3rem;
+  letter-spacing: 2px;
+
+}
+
+.footer-bottom {
+  position:absolute;
+  bottom: 15rem;
+  color: #fff;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 3rem;
 }

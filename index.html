@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>bt1</title>
   </head>
@@ -14,13 +15,13 @@
           <h3 class="logo">Entry Test</h3>
           <ul class="menu">
             <li class="menu-item">
-              <a href="#" class="menu-link">About</a>
+              <a href="#about" class="menu-link">About</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Project</a>
+              <a href="#Project" class="menu-link">Project</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Contact</a>
+              <a href="#contact" class="menu-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -28,7 +29,7 @@
 
       <main>
         <!-- about -->
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <div class="about-top">
               <h1>LOREM</h1>
@@ -57,7 +58,7 @@
           </div>
         </section>
         <!-- project -->
-        <section class="project">
+        <section class="project" id="Project">
           <div class="container">
             <div class="project-content">
               <div class="illustration"></div>
@@ -87,7 +88,6 @@
               </div>
             </div>
             <div class="project-content">
-              
               <div class="describe">
                 <h2>Misty</h2>
                 <p>
@@ -100,11 +100,30 @@
               </div>
               <div class="illustration"></div>
             </div>
-           
-           
           </div>
         </section>
       </main>
+
+      <footer class="footer" id="contact">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <i class='bx bx-paper-plane'></i>
+              <p>Lorem!</p>
+            </div>
+            <form>
+             <div class="form-item">
+              <input type="email" class="form-control" placeholder="Enter  your email address">
+              <button class="btn-ft">NOTYFY ME!</button>
+             </div>
+            </form>
+
+          </div>
+          <p class="footer-bottom">
+            copyright &copy; your website 2022
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
