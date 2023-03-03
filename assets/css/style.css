@@ -181,7 +181,8 @@ html {
   padding-bottom: 30.7%;
   position: relative;
 }
-.project-content:nth-child(2) .illustration {
+.project-content:nth-child(2) .illustration,
+.project-content:nth-child(3) .illustration {
   width: 50%;
 }
 
@@ -199,18 +200,23 @@ html {
   width: 40%;
   padding: 0 7rem;
 }
+.project-content:nth-child(2) {
+  padding-bottom: 8.9rem;
+}
 
-.project-content:nth-child(2) .describe {
+.project-content:nth-child(2) .describe,
+.project-content:nth-child(3) .describe {
   width: 50%;
   padding: 0;
   position: relative;
 }
 
-.project-content:nth-child(2) .describe::before {
+.project-content:nth-child(2) .describe::before,
+.project-content:nth-child(3) .describe::before {
   content: "";
   position: absolute;
   width: 100%;
-  height:62rem;
+  height: 62rem;
   background-color: #000;
   z-index: -1;
   top: -7.5rem;
@@ -225,7 +231,8 @@ html {
   padding-bottom: 1.9rem;
 }
 
-.project-content:nth-child(2) .describe h2 {
+.project-content:nth-child(2) .describe h2,
+.project-content:nth-child(3) .describe h2 {
   color: #fff;
 }
 
@@ -236,7 +243,8 @@ html {
   line-height: 1.6;
 }
 
-.project-content:nth-child(2) .describe p {
+.project-content:nth-child(2) .describe p,
+.project-content:nth-child(3) .describe p {
   padding: 0 10rem;
 }
 
@@ -257,8 +265,7 @@ html {
     height: 15rem;
   }
 
-
-  .project-content:nth-child(2) .describe::before {
+  .project-content:nth-child(2) .describe::before , .project-content:nth-child(3) .describe::before {
     top: -14.3rem;
     height: 68rem;
   }
